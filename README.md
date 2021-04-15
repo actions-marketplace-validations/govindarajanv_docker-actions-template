@@ -1,6 +1,6 @@
-# Auto Release Draft
+# Auto Release Milestone
 
-A GitHub action that automatically drafts a GitHub release based on a newly created version tag.
+A GitHub action that automatically drafts a GitHub release based on a newly closed milestone.
 
 The commit messages between the created version tag and the one that came before it will become the release notes.
 
