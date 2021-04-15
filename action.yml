@@ -1,4 +1,4 @@
-name: 'Auto Release Milestone'
+name: 'Auto Release Milestone Action'
 description: 'Drafts a Github Release based on newly closed Milestone'
 author: 'Govindarajan V'
 inputs:
