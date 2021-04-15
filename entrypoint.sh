@@ -26,6 +26,11 @@ release_url=$(dotnet gitreleasemanager create \
 --token $repo_token \
 --owner $owner \
 --repository $repository)
+
+if[ $? -ne 0 ]; then
+    echo "::error:Failed to create a release draft"
+    exit 1
+fi
 #logging commands
 echo "::set-output name-release-url::$release_url"
 
