@@ -6,5 +6,8 @@ LABEL maintainer="Govindarajan V"
 
 #Docker caches the command so update and install should be in the same command
 RUN apt-get update && apt-get install jq -y 
+
+RUN dotnet tool install -g GitReleaseManager.Tool 
+ENV PATH /root/.dotnet/tools:$PATH
 COPY entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
