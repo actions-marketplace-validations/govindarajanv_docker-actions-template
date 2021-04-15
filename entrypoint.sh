@@ -18,7 +18,7 @@ fi
 
 milestone_name=$(jq --raw-output .milestone.title "$GITHUB_EVENT_PATH")
 echo $milestone_name
-echo $GITHUB_EVENT_PATH
+cat $GITHUB_EVENT_PATH
 
 
 IFS='/' read owner repository <<< $GITHUB_REPOSITORY
